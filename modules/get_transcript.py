@@ -1,7 +1,18 @@
 from youtube_transcript_api import YouTubeTranscriptApi
 
-import modules.constants as constants
+try:
+    import modules.constants
+except Exception:
+    import constants
 
+""" Function will get the transcript of a video and write it down
+    in "transcript.txt"
+
+    Arguments:
+        video_id --> String containing the ID for a YouTube video
+    
+    No return type
+"""
 def get_transcript(video_id):
     transcript = YouTubeTranscriptApi.get_transcript(video_id)
 

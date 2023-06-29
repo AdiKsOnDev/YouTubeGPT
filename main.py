@@ -8,8 +8,10 @@ from modules.get_transcript import get_transcript
 
 get_transcript(constants.VIDEO_ID)
 
+# Set the API key
 os.environ["OPENAI_API_KEY"] = constants.API_KEY
 
+# Use "transcript.txt" as the training data
 loader = TextLoader('data/transcript.txt')
 index = VectorstoreIndexCreator().from_loaders([loader])
 
