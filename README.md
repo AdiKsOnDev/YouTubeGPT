@@ -1,4 +1,4 @@
-# YouTube Video analyzing AI
+# :movie_camera: YouTube Video analyzing AI
 This is a simple Python script for using OpenAI API on a transcript from a YouTube video.
 Feel free to use this to ask questions about the video, ask for a quick summary, etc.
 
