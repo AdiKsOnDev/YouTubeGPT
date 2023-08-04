@@ -21,8 +21,10 @@ index = VectorstoreIndexCreator().from_loaders([loader])
 
 while True:
     print("------------------------------------")
-    print("Ask me a question about the video")
-    query = input("")
+    query = input("Ask me a question about the video\n")
     print("------------------------------------")
+
+    if query.lower() == "quit":
+        break
 
     print(index.query(query, llm=ChatOpenAI()))
