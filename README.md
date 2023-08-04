@@ -4,7 +4,9 @@ Feel free to use this to ask questions about the video, ask for a quick summary,
 
 ## :computer: How to use
 - After you clone the project, install the required Python libraries:
-  <br>`pip install -r requirements.txt`
+  ```bash
+  pip install -r requirements.txt
+  ```
 - Then, open `modules/constants.py` and paste your OpenAI API key.
 - Run `python main.py` and start asking the questions.
 
